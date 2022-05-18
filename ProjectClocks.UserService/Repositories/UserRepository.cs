@@ -76,6 +76,39 @@ namespace ProjectClocks.UserService.Repositories
             return Task.FromResult(user);
         }
 
+        public async Task<IEnumerable<User>> RetrieveByGroupAsync(int id)
+        {
+            // for performance, get from cache
+            if (usersCache is null) return Enumerable.Empty<User>();
+
+            // query the dictionary by group_id and return all users belonging to that group
+            IEnumerable<User> groupUsers = new List<User>();
+            groupUsers = db.Users.Where(g => g.GroupId == id).ToList();
+            return await Task.FromResult(groupUsers);
+        }
+
+        public async Task<IEnumerable<User>> RetrieveByRoleAsync(int id)
+        {
+            // for performance, get from cache
+            if (usersCache is null) return Enumerable.Empty<User>();
+
+            // query the dictionary by role_id and return all users belonging to that role
+            IEnumerable<User> roleUsers = new List<User>();
+            roleUsers = db.Users.Where(g => g.RoleId == id).ToList();
+            return await Task.FromResult(roleUsers);
+        }
+
+        public async Task<IEnumerable<User>> RetrieveByClientAsync(int id)
+        {
+            // for performance, get from cache
+            if (usersCache is null) return Enumerable.Empty<User>();
+
+            // query the dictionary by client_id and return all users belonging to that client
+            IEnumerable<User> clientUsers = new List<User>();
+            clientUsers = db.Users.Where(g => g.ClientId == id).ToList();
+            return await Task.FromResult(clientUsers);
+        }
+
         public async Task<User?> UpdateAsync(int id, User user)
         {
             // update in database

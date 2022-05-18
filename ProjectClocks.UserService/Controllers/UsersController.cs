@@ -49,6 +49,45 @@ namespace ProjectClocks.UserService.Controllers
             return Ok(user); // 200 OK with customer in body
         }
 
+        // GET: api/users/group/[id]
+        /// <summary>
+        /// Gets a list of users by group_id
+        /// </summary>
+        /// <param name="id">Id of the group to retrieve users which belong</param>
+        /// <returns></returns>
+        [HttpGet("group/{id}", Name = nameof(GetUsersByGroup))] // named route
+        [ProducesResponseType(200, Type = typeof(IEnumerable<User>))]
+        public async Task<IEnumerable<User>> GetUsersByGroup(int id)
+        {
+            return await repo.RetrieveByGroupAsync(id);
+        }
+
+        // GET: api/users/role/[id]
+        /// <summary>
+        /// Gets a list of users by role_id
+        /// </summary>
+        /// <param name="id">Id of the role to retrieve users which belong</param>
+        /// <returns></returns>
+        [HttpGet("role/{id}", Name = nameof(GetUsersByRole))] // named route
+        [ProducesResponseType(200, Type = typeof(IEnumerable<User>))]
+        public async Task<IEnumerable<User>> GetUsersByRole(int id)
+        {
+            return await repo.RetrieveByRoleAsync(id);
+        }
+
+        // GET: api/users/client/[id]
+        /// <summary>
+        /// Gets a list of users by client_id
+        /// </summary>
+        /// <param name="id">Id of the client to retrieve users which belong</param>
+        /// <returns></returns>
+        [HttpGet("client/{id}", Name = nameof(GetUsersByClient))] // named route
+        [ProducesResponseType(200, Type = typeof(IEnumerable<User>))]
+        public async Task<IEnumerable<User>> GetUsersByClient(int id)
+        {
+            return await repo.RetrieveByClientAsync(id);
+        }
+
         // POST: api/users
         // BODY: User (JSON, XML)
         /// <summary>
