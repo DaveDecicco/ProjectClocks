@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectClocks.UserService",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.UserProjectService", "ProjectClocks.UserProjectService\ProjectClocks.UserProjectService.csproj", "{2C87301B-6635-4B27-9DA4-F13B1730682A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.UserTimeEntryService", "ProjectClocks.UserTimeEntryService\ProjectClocks.UserTimeEntryService.csproj", "{09388CFE-0AFE-48E0-B645-126058F1ED39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{2C87301B-6635-4B27-9DA4-F13B1730682A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C87301B-6635-4B27-9DA4-F13B1730682A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C87301B-6635-4B27-9DA4-F13B1730682A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09388CFE-0AFE-48E0-B645-126058F1ED39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09388CFE-0AFE-48E0-B645-126058F1ED39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09388CFE-0AFE-48E0-B645-126058F1ED39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09388CFE-0AFE-48E0-B645-126058F1ED39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -92,10 +92,10 @@ namespace ProjectClocks.UserProjectService.Repositories
             // for performance, get from cache
             if (usersProjectsCache is null) return Enumerable.Empty<UserProject>();
 
-            // query the dictionary by role_id and return all users belonging to that role
-            IEnumerable<UserProject> roleUserProjects = new List<UserProject>();
-            roleUserProjects = db.UserProjects.Where(g => g.UserId == id).ToList();
-            return await Task.FromResult(roleUserProjects);
+            // query the dictionary by user_id and return all users belonging to that role
+            IEnumerable<UserProject> userProjects = new List<UserProject>();
+            userProjects = db.UserProjects.Where(g => g.UserId == id).ToList();
+            return await Task.FromResult(userProjects);
         }
 
         public async Task<UserProject?> UpdateAsync(int id, UserProject userproject)
