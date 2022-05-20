@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.UserProjectSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.UserTimeEntryService", "ProjectClocks.UserTimeEntryService\ProjectClocks.UserTimeEntryService.csproj", "{09388CFE-0AFE-48E0-B645-126058F1ED39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.TimesheetService", "ProjectClocks.TimesheetService\ProjectClocks.TimesheetService.csproj", "{929DD361-CCEA-4C3E-A13A-8DDE69224E24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{09388CFE-0AFE-48E0-B645-126058F1ED39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09388CFE-0AFE-48E0-B645-126058F1ED39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09388CFE-0AFE-48E0-B645-126058F1ED39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{929DD361-CCEA-4C3E-A13A-8DDE69224E24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{929DD361-CCEA-4C3E-A13A-8DDE69224E24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{929DD361-CCEA-4C3E-A13A-8DDE69224E24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{929DD361-CCEA-4C3E-A13A-8DDE69224E24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
