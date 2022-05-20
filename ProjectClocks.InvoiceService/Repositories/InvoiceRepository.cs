@@ -18,7 +18,7 @@ namespace ProjectClocks.InvoiceService.Repositories
         {
             db = injectedContext;
 
-            // pre-load Invoices from the database as a normal Dictionary with CustomerId as the key, then convert to a thread-safe ConcurrentDictionary
+            // pre-load Invoices from the database as a normal Dictionary with Id as the key, then convert to a thread-safe ConcurrentDictionary
             if (invoicesCache is null)
             {
                 invoicesCache = new ConcurrentDictionary<int, Invoice>(db.Invoices.ToDictionary(invoice => invoice.Id));

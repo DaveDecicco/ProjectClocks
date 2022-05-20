@@ -15,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectClocks.InvoiceServic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectClocks.ProjectService", "ProjectClocks.ProjectService\ProjectClocks.ProjectService.csproj", "{4CA5FB0F-2237-4F34-AC97-3B0AC9EE2EB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.ReportConfigurationService", "ProjectClocks.ReportConfigurationService\ProjectClocks.ReportConfigurationService.csproj", "{BFBCC540-3EA2-4992-94C0-E39C96D929FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectClocks.ReportConfigurationService", "ProjectClocks.ReportConfigurationService\ProjectClocks.ReportConfigurationService.csproj", "{BFBCC540-3EA2-4992-94C0-E39C96D929FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.RoleService", "ProjectClocks.RoleService\ProjectClocks.RoleService.csproj", "{E5E79EBB-C03E-4D48-8928-F885BC3C03DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectClocks.RoleService", "ProjectClocks.RoleService\ProjectClocks.RoleService.csproj", "{E5E79EBB-C03E-4D48-8928-F885BC3C03DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.TaskService", "ProjectClocks.TaskService\ProjectClocks.TaskService.csproj", "{882D7592-95FA-4A04-BDDA-F2ADD124A866}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectClocks.TaskService", "ProjectClocks.TaskService\ProjectClocks.TaskService.csproj", "{882D7592-95FA-4A04-BDDA-F2ADD124A866}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.UserService", "ProjectClocks.UserService\ProjectClocks.UserService.csproj", "{C504C91A-39FF-4C25-8C45-53F281CEF664}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectClocks.UserService", "ProjectClocks.UserService\ProjectClocks.UserService.csproj", "{C504C91A-39FF-4C25-8C45-53F281CEF664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectClocks.UserProjectService", "ProjectClocks.UserProjectService\ProjectClocks.UserProjectService.csproj", "{2C87301B-6635-4B27-9DA4-F13B1730682A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{C504C91A-39FF-4C25-8C45-53F281CEF664}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C504C91A-39FF-4C25-8C45-53F281CEF664}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C504C91A-39FF-4C25-8C45-53F281CEF664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C87301B-6635-4B27-9DA4-F13B1730682A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C87301B-6635-4B27-9DA4-F13B1730682A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C87301B-6635-4B27-9DA4-F13B1730682A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C87301B-6635-4B27-9DA4-F13B1730682A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,7 +18,7 @@ namespace ProjectClocks.RoleService.Repositories
         {
             db = injectedContext;
 
-            // pre-load roles from the database as a normal Dictionary with CustomerId as the key, then convert to a thread-safe ConcurrentDictionary
+            // pre-load roles from the database as a normal Dictionary with Id as the key, then convert to a thread-safe ConcurrentDictionary
             if (roleCache is null)
             {
                 roleCache = new ConcurrentDictionary<int, Role>(db.Roles.ToDictionary(role => role.Id));

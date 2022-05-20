@@ -18,7 +18,7 @@ namespace ProjectClocks.ReportConfigurationService.Repositories
         {
             db = injectedContext;
 
-            // pre-load ReportConfigurations from the database as a normal Dictionary with CustomerId as the key, then convert to a thread-safe ConcurrentDictionary
+            // pre-load ReportConfigurations from the database as a normal Dictionary with Id as the key, then convert to a thread-safe ConcurrentDictionary
             if (rcCache is null)
             {
                 rcCache = new ConcurrentDictionary<int, ReportConfiguration>(db.ReportConfigurations.ToDictionary(rc => rc.Id));

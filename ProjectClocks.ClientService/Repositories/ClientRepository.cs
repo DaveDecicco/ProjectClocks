@@ -18,7 +18,7 @@ namespace ProjectClocks.ClientService.Repositories
         {
             db = injectedContext;
 
-            // pre-load clients from the database as a normal Dictionary with CustomerId as the key, then convert to a thread-safe ConcurrentDictionary
+            // pre-load clients from the database as a normal Dictionary with Id as the key, then convert to a thread-safe ConcurrentDictionary
             if (clientsCache is null)
             {
                 clientsCache = new ConcurrentDictionary<int, Client>(db.Clients.ToDictionary(client => client.Id));

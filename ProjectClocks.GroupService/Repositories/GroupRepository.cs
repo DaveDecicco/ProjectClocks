@@ -18,7 +18,7 @@ namespace ProjectClocks.GroupService.Repositories
         {
             db = injectedContext;
 
-            // pre-load Groups from the database as a normal Dictionary with CustomerId as the key, then convert to a thread-safe ConcurrentDictionary
+            // pre-load Groups from the database as a normal Dictionary with Id as the key, then convert to a thread-safe ConcurrentDictionary
             if (groupsCache is null)
             {
                 groupsCache = new ConcurrentDictionary<int, Group>(db.Groups.ToDictionary(group => group.Id));

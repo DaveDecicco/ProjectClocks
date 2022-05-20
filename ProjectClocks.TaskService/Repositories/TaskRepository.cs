@@ -19,7 +19,7 @@ namespace ProjectClocks.TaskService.Repositories
         {
             db = injectedContext;
 
-            // pre-load tasks from the database as a normal Dictionary with CustomerId as the key, then convert to a thread-safe ConcurrentDictionary
+            // pre-load tasks from the database as a normal Dictionary with Id as the key, then convert to a thread-safe ConcurrentDictionary
             if (taskCache is null)
             {
                 taskCache = new ConcurrentDictionary<int, PCTask>(db.Tasks.ToDictionary(client => client.Id));
